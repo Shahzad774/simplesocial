@@ -19,6 +19,7 @@ from . import views
 
 urlpatterns = [
     url(r"^$", views.HomePage.as_view(), name="home"),
+    url(r"^logout/", views.logout.as_view(), name="logout"),
     url(r"^test/$", views.TestPage.as_view(), name="test"),
     url(r"^thanks/$", views.ThanksPage.as_view(), name="thanks"),
     url(r"^admin/", admin.site.urls),
